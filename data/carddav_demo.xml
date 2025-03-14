@@ -1,0 +1,23 @@
+<odoo>
+    <record id="res_partner_demo1" model="res.partner">
+        <field name="name">John Doe</field>
+        <field name="function">Sales Manager</field>
+        <field name="email">johndoe@example.com</field>
+        <field name="phone">+1234567890</field>
+        <field name="mobile">+1987654321</field>
+        <field name="carddav_sync">True</field>
+    </record>
+
+    <record id="res_partner_demo2" model="res.partner">
+        <field name="name">Acme Inc.</field>
+        <field name="is_company">True</field>
+        <field name="phone">+18005551234</field>
+        <field name="email">contact@acme.com</field>
+        <field name="website">https://acme.com</field>
+        <field name="street">123 Main St</field>
+        <field name="city">New York</field>
+        <field name="zip">10001</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="carddav_sync">True</field>
+    </record>
+</odoo>
