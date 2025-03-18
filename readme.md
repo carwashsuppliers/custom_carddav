@@ -14,15 +14,19 @@ To deploy this module using Odoo.sh, follow these steps:
 2. **Add the Submodule**
    - In the Odoo.sh WebUI, click on the **Submodule** button.
    - Paste the SSH clone URL from this repository (`git@github.com:carwashsuppliers/custom_carddav.git`).
+   - Change the path to addons/custom_carddav.
    - Click **Install**.
 
 3. **Test in Development**
    - Wait for the deployment to complete.
    - Log into your Odoo instance in **Development Mode** and verify the module is installed correctly.
+   - This is a dev database with demo data for testing.
+   - See installation instructions below.
 
 4. **Move to Staging**
-   - If testing is successful, merge the `dev` branch into `staging`.
-   - Perform additional testing if required.
+   - If testing is successful, move the `dev` branch into `staging`. This uses production database data for testing.
+   - Perform additional testing.
+   - See installation instruction sbelow.
 
 5. **Merge with Main (Production)**
    - If everything works correctly in staging, merge `staging` into `main` to deploy to production.
